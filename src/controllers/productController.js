@@ -1,10 +1,6 @@
-
 import { findAll, findById, create, update, remove } from '../models/productModel.js'
 import { getPostData } from '../utils.js'
 
-
-// @desc    Gets All Products
-// @route   GET /api/products
 export async function getProducts(req, res) {
     try {
         const products = await findAll()
@@ -16,8 +12,6 @@ export async function getProducts(req, res) {
     }
 }
 
-// @desc    Gets Single Product
-// @route   GET /api/product/:id
 export async function getProduct(req, res, id) {
     try {
         const product = await findById(id)
@@ -33,8 +27,6 @@ export async function getProduct(req, res, id) {
     }
 }
 
-// @desc    Create a Product
-// @route   POST /api/products
 export async function createProduct(req, res) {
     try {
         const body = await getPostData(req)
@@ -52,8 +44,6 @@ export async function createProduct(req, res) {
     }
 }
 
-// @desc    Update a Product
-// @route   PUT /api/products/:id
 export async function updateProduct(req, res, id) {
     try {
         const product = await findById(id)
@@ -77,8 +67,6 @@ export async function updateProduct(req, res, id) {
     }
 }
 
-// @desc    Delete Product
-// @route   DELETE /api/product/:id
 export async function deleteProduct(req, res, id) {
     try {
         const product = await findById(id)

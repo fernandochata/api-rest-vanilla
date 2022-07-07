@@ -1,20 +1,20 @@
 {
-  "name": "api-rest-vinilla",
+  "name": "api-rest-vanilla",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Send and receive data (JSON file) from and to a REST API",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.18"
+  "author": "Fernando Chata",
+  "license": "MIT License",
+    "dependencies": {
+    "uuid": "8.3.2"
   },
-  "dependencies": {
-    "uuid": "^8.3.2"
+  "devDependencies": {
+    "nodemon": "2.0.18"
   }
 }
