@@ -16,7 +16,7 @@ Ejemplo de API REST sin uso de frameworks
 - ✅ Archivo Json con información aleatoria, de *https://www.mockaroo.com/*.
 - ⭕ Capturar errores al crear producto (se necesita enviar todos los datos excepto el id), lo ideal es sólo enviar los datos que se desea actualizar.
 - ⭕ Crear pagina de inicio y 404.
-- ⭕ Deploy en github Pages.
+- ⭕ Deploy en Heroku.
 
 ## ESTRUCTURA
 ```
