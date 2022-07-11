@@ -20,7 +20,7 @@ export function getPostData(req) {
             req.on('end', () => {
                 resolve(body)
             })
-        } catch (error) {
+        } catch (err) {
             reject(err)
         }
     })

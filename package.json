@@ -5,16 +5,17 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "cross-env NODE_ENV=production node src/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js"
   },
   "keywords": [],
   "author": "Fernando Chata",
   "license": "MIT License",
-    "dependencies": {
+  "dependencies": {
     "uuid": "8.3.2"
   },
   "devDependencies": {
+    "cross-env": "7.0.3",
     "nodemon": "2.0.18"
   }
 }
